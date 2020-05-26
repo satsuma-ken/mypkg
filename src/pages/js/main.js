@@ -5,7 +5,7 @@ ros.on('close', function() {console.log('websocket: closed');});
 
 var ls2 = new ROSLIB.Topic({
 	ros: ros,
-	name: '/detect',
+	name: '/detect_on',
 	messageType: 'std_msgs/Int32'
 })
 

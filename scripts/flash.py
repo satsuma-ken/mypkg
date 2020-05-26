@@ -49,8 +49,8 @@ if __name__ == '__main__':
     wiringpi.pinMode(20, 1)
     wiringpi.pinMode(21, 1)
 
-    sub = rospy.Subscriber('wao', Int32, callback)
-    pub = rospy.Publisher('wao_wao', String, queue_size=1)
+    sub = rospy.Subscriber('detect_on', Int32, callback)
+    pub = rospy.Publisher('detecting', String, queue_size=1)
     rate = rospy.Rate(10)
     while not rospy.is_shutdown():
         wiringpi.digitalWrite(11, chk1)
