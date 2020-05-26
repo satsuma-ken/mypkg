@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="stylesheet" href="css/bootstrap.min.css">
-<title>LED ticka ticka</title>
+<title>LED test</title>
 </head>
   <body>
     <!-- navigation bar -->
@@ -18,7 +18,7 @@
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                     <a class="nav-item nav-link" href="#">
-                    	LED ticka ticka means very shiny LED!
+                    	LED test
                     </a>
                 </li>
             </ul>
@@ -27,22 +27,21 @@
     
     <!-- main containts -->
     <div class="container p-5">
-        <span id="count">not received</span>
-	<button class="btn btn-primary m-5" onclick="say_woowao()">Wao!</button>
-	
-	<!-- LED buttons -->
-	<div class="form-check form-check-inline" onclick="say_wao()">
-		<form name="chbox">
-			<input class="form-check-input m-2" type="checkbox" id="chbox1" value="option1">
-			<label for="chbox1" class="form-check-label m-2">1</label>
-			<input class="form-check-input m-2" type="checkbox" id="chbox2" value="option2">
-                	<label for="chbox2" class="form-check-label m-2">2</label>
-			<input class="form-check-input" type="checkbox" id="chbox3" value="option3">
-                	<label for="chbox3" class="form-check-label m-2">3</label>
-			<input class="form-check-input m-2" type="checkbox" id="chbox4" value="option4">
-                	<label for="chbox4" class="form-check-label m-2">4</label>
-		</form>
-	</div>
+      <button class="btn btn-primary m-5" onclick="all_off()">Wao!</button>
+      
+      <!-- LED buttons -->
+      <div class="form-check form-check-inline" onclick="detect_on()">
+        <form name="chbox">
+          <input class="form-check-input m-2" type="checkbox" id="chbox1" value="option1">
+          <label for="chbox1" class="form-check-label m-2">1</label>
+          <input class="form-check-input m-2" type="checkbox" id="chbox2" value="option2">
+                      <label for="chbox2" class="form-check-label m-2">2</label>
+          <input class="form-check-input" type="checkbox" id="chbox3" value="option3">
+                      <label for="chbox3" class="form-check-label m-2">3</label>
+          <input class="form-check-input m-2" type="checkbox" id="chbox4" value="option4">
+                      <label for="chbox4" class="form-check-label m-2">4</label>
+        </form>
+      </div>
     </div>
 
     <!-- bootstrap javascripts -->
@@ -51,6 +50,6 @@
     <!-- ros javascripts -->
     <script src="https://static.robotwebtools.org/EventEmitter2/current/eventemitter2.min.js"></script>
     <script src="https://static.robotwebtools.org/roslibjs/current/roslib.min.js"></script>
-    <script src="js/main2.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
