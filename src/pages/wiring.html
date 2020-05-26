@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>LED test</title>
+</head>
+  <body>
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+	    <a class="navbar-brand" href="#">welcome to LED test!</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-item nav-link" href="index.html">
+                    	LED test
+                    </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-item nav-link" href="#">
+                    How To wiring?
+                  </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- main containts -->
+    <div class="container p-5">
+      <div class="card">
+        <img class="card-img-top" src="images/raspberry_pi3_pins.png" alt="raspberry pi 3">
+        <div class="card-body">
+          <p class="card-text">
+            Raspberry pi 3 のGPIOピンから上図のとおりに配線する。<br>抵抗は10kΩ当たりが適当。
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- bootstrap javascripts -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- ros javascripts -->
+    <script src="https://static.robotwebtools.org/EventEmitter2/current/eventemitter2.min.js"></script>
+    <script src="https://static.robotwebtools.org/roslibjs/current/roslib.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
